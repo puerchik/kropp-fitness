@@ -309,3 +309,9 @@ h6 {
   background-color: currentColor;
   box-shadow: 16px 0 0 currentColor;
 }
+
+.banner-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
