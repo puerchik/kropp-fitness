@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Heebo";
-  src: url(./fonts/Heebo-Light.woff2) format("woff2");
+  src: url(./fonts/Heebo-Bold.woff2) format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -314,4 +314,64 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  min-height: 985px;
+  background-color: var(--color-dark-alternate);
+  padding: 37px 70px;
+}
+
+.banner-info-text {
+  display: inline-flex;
+  align-items: end;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.27;
+  color: var(--color-light);
+  text-transform: uppercase;
+}
+
+.banner-info-text::before {
+  content: "";
+  width: 194px;
+  aspect-ratio: 1;
+  margin-right: 30px;
+  background: url("./images/banner-arrow.svg") center/contain no-repeat;
+}
+
+.banner-title {
+  color: var(--color-light);
+  font-size: 339px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.banner-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.banner-pagination-button {
+  all: unset;
+  display: inline-flex;
+  padding: 7px;
+}
+
+.banner-pagination-button::after,
+.banner-pagination-button.is-current::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  aspect-ratio: 1;
+  border: var(--border);
+  border-radius: 50%;
+  transition-duration: var(--transition-duration);
+}
+
+.banner-pagination-button.is-current::after {
+  background-color: var(--color-light);
+}
+
+.banner-pagination-button:not(.is-current):hover::after {
+  border-color: var(--color-light-gray);
 }
