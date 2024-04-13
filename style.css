@@ -245,7 +245,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 15px;
+  column-gap: 15px;
   padding-inline: 32px;
   background-color: var(--color-dark-alternate);
 }
@@ -256,6 +256,7 @@ h6 {
 
 .header-menu-list {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 50px;
 }
 
@@ -374,4 +375,35 @@ h6 {
 
 .banner-pagination-button:not(.is-current):hover::after {
   border-color: var(--color-light-gray);
+}
+
+@media (max-width: 870px) {
+  .header {
+    row-gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-inline: 15px;
+  }
+  .header-menu {
+    order: 1;
+    flex-basis: 100%;
+  }
+  .header-menu-link {
+    height: 50px;
+  }
+  .header-menu-list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 445px) {
+  .header-actions {
+    column-gap: 10px;
+  }
+  .header-menu-link {
+    height: 20px;
+  }
+  .button {
+    padding-inline: 15px;
+  }
 }
