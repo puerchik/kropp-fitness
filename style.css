@@ -480,6 +480,17 @@ h6 {
   }
 }
 
+@media (max-width: 1080px) {
+  .motivation-card-image {
+    margin-block: 0;
+    width: 50%;
+    height: auto;
+  }
+  .motivation-card {
+    padding-block: 35px;
+  }
+}
+
 @media (max-width: 870px) {
   .header {
     row-gap: 10px;
@@ -500,6 +511,17 @@ h6 {
   .banner-body {
     padding-inline: 30px;
   }
+  .motivation-card,
+  .motivation-item:nth-child(even) .motivation-card {
+    flex-direction: column-reverse;
+    row-gap: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .motivation-card-image {
+    width: 60%;
+  }
 }
 
 @media (max-width: 445px) {
@@ -517,5 +539,8 @@ h6 {
   }
   .banner-info-text::before {
     margin-right: 15px;
+  }
+  .motivation-card-image {
+    width: 90%;
   }
 }
