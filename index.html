@@ -208,23 +208,35 @@
           ></video>
           <button class="join-us-video-button" type="button">Play</button>
         </div>
-        <div class="join-us-body">
+        <div class="join-us-body container">
           <h2 class="join-us-title">JOIN US</h2>
           <form class="join-us-form">
-            <h3 class="join-us-form-title backdrop-title" data-title="GO!">Start here</h3>
+            <h3
+              class="join-us-form-title large-title backdrop-title centered"
+              data-title="GO!"
+            >
+              Start here
+            </h3>
             <p class="join-us-form-desc">fill the form below to start your journey</p>
-            <label class="visually-hidden" for="name">Name</label>
-            <input type="text" class="join-us-form-name" id="name" placeholder="Name" />
-            <label class="visually-hidden" for="email">Email</label>
-            <input
-              type="email"
-              class="join-us-form-name"
-              id="email"
-              placeholder="Email"
-            />
-            <button class="join-us-form-button button transparent" type="submit">
-              Subscribe
-            </button>
+            <div class="join-us-form-inputs-wrapper">
+              <label class="visually-hidden" for="name">Name</label>
+              <input
+                type="text"
+                class="join-us-form-input input"
+                id="name"
+                placeholder="Name"
+              />
+              <label class="visually-hidden" for="email">Email</label>
+              <input
+                type="email"
+                class="join-us-form-input input"
+                id="email"
+                placeholder="Email"
+              />
+              <button class="join-us-form-button button transparent" type="submit">
+                Subscribe
+              </button>
+            </div>
           </form>
         </div>
       </section>
