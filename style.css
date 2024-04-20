@@ -536,6 +536,12 @@ h6 {
   align-items: center;
 }
 
+.join-us-video {
+  width: 100%;
+  max-width: 960px;
+  height: 100%;
+}
+
 .join-us-video-button {
   position: absolute;
   top: 50%;
@@ -703,11 +709,41 @@ h6 {
   .motivation-card-image {
     width: 60%;
   }
+  .join-us-video-button {
+    width: 150px;
+  }
+  .join-us-video-wrapper {
+    padding-block: 90px;
+  }
+  .join-us-title {
+    margin-bottom: 90px;
+  }
+  .join-us-body {
+    padding-bottom: 90px;
+  }
+  .join-us-form-inputs-wrapper {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
 }
 
 @media (max-width: 550px) {
   .training-types {
     padding-left: 30px;
+  }
+  .join-us-video-button {
+    width: 120px;
+  }
+  .join-us-title {
+    margin-bottom: 70px;
+  }
+  .join-us-body {
+    padding-bottom: 70px;
+  }
+  .training-types-list {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 70px;
   }
 }
 
@@ -729,10 +765,6 @@ h6 {
   }
   .motivation-card-image {
     width: 90%;
-  }
-  .training-types-list {
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 70px;
   }
   .training-types {
     padding-left: 0;
