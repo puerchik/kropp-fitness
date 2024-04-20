@@ -522,6 +522,10 @@ h6 {
   justify-self: center;
 }
 
+.join-us {
+  background-color: var(--color-dark-alternate);
+}
+
 .join-us-body {
   padding-bottom: 150px;
 }
@@ -539,7 +543,7 @@ h6 {
 .join-us-video {
   width: 100%;
   max-width: 960px;
-  height: 100%;
+  height: auto;
 }
 
 .join-us-video-button {
@@ -645,6 +649,37 @@ h6 {
   color: var(--color-light);
 }
 
+.location {
+  max-width: 1920px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.location-image {
+  width: 100%;
+  height: auto;
+}
+
+.location-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.location-desc {
+  max-width: 490px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 37px;
+}
+
+.location-button {
+  color: var(--color-light);
+}
+
 @media (max-width: 1919px) {
   .motivation-card-image {
     margin-block: -20px;
@@ -672,6 +707,13 @@ h6 {
   }
   .motivation-card {
     padding-block: 35px;
+  }
+  .location {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .location-title {
+    margin-bottom: 30px;
   }
 }
 
