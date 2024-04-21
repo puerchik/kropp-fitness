@@ -895,7 +895,11 @@ input[type="number"] {
     text-align: center;
   }
   .calculate-form-body {
+    grid-template-columns: 1fr;
     margin-bottom: 45px;
+  }
+  .calculate-form {
+    width: 100%;
   }
   .calculate-button {
     width: 100%;
