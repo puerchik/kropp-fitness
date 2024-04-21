@@ -859,6 +859,12 @@ input[type="number"] {
   }
 }
 
+@media (max-width: 1500px) {
+  .calculate-title.backdrop-title::before {
+    left: 0.45em;
+  }
+}
+
 @media (max-width: 1450px) {
   .training-types-list {
     grid-template-columns: repeat(3, 1fr);
@@ -866,6 +872,33 @@ input[type="number"] {
   }
   .training-types {
     padding-left: 0;
+  }
+  .calculate-body {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .calculate-inner {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 95px;
+  }
+  .calculate-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 200px;
+  }
+  .calculate-desc {
+    text-align: center;
+  }
+  .calculate-form-body {
+    margin-bottom: 45px;
+  }
+  .calculate-button {
+    width: 100%;
   }
 }
 
@@ -941,6 +974,12 @@ input[type="number"] {
     align-items: center;
     row-gap: 30px;
   }
+  .calculate-table-wrapper::before {
+    width: 520px;
+  }
+  .calculate-body {
+    margin-bottom: 135px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -959,6 +998,15 @@ input[type="number"] {
   .training-types-list {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 70px;
+  }
+  .calculate-table-wrapper::before {
+    display: none;
+  }
+  .calculate-body {
+    margin-bottom: 80px;
+  }
+  .calculate-inner {
+    padding-bottom: 80px;
   }
 }
 
