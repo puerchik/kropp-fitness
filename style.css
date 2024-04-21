@@ -266,6 +266,23 @@ h6 {
   padding: 15px 25px;
 }
 
+.input::placeholder,
+select.input:invalid {
+  color: var(--color-dark-gray);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -719,6 +736,44 @@ h6 {
   scroll-snap-align: start;
   width: 100%;
   height: auto;
+}
+
+.calculate {
+  background-color: var(--color-dark-alternate);
+}
+
+.calculate-inner {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 145px;
+}
+
+.calculate-body {
+  max-width: 627px;
+}
+
+.calculate-desc {
+  max-width: 385px;
+  margin-bottom: 31px;
+}
+
+.calculate-form-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 30px;
+  margin-bottom: 26px;
+}
+
+.calculate-input.wide {
+  grid-column: -1 / 1;
+}
+
+.calculate-input {
+  border: 1px solid #404040;
+}
+
+.calculate-button {
+  color: var(--color-light);
 }
 
 @media (max-width: 1919px) {

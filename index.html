@@ -322,25 +322,50 @@
               nemore epicurei
             </p>
             <form class="calculate-form">
-              <label class="visually-hidden" for="height">Height</label>
-              <input type="number" class="input" id="height" placeholder="Height / cm" />
-              <label class="visually-hidden" for="weight">Weight</label>
-              <input type="number" class="input" id="weight" placeholder="Weight / kg" />
-              <label class="visually-hidden" for="age">Age</label>
-              <input type="number" class="input" id="age" placeholder="Age" />
-              <label class="visually-hidden" for="gender">Gender</label>
-              <select class="calculate-input input" id="gender">
-                <option value="" selected disabled>Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-              </select>
-              <label class="visually-hidden" for="activity">Activity</label>
-              <select class="calculate-input input wide" id="activity">
-                <option value="" selected disabled>Select an activity factor:</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
+              <div class="calculate-form-body">
+                <label class="visually-hidden" for="height">Height</label>
+                <input
+                  type="number"
+                  class="calculate-input input"
+                  id="height"
+                  placeholder="Height / cm"
+                />
+                <label class="visually-hidden" for="weight">Weight</label>
+                <input
+                  type="number"
+                  class="calculate-input input"
+                  id="weight"
+                  placeholder="Weight / kg"
+                />
+                <label class="visually-hidden" for="age">Age</label>
+                <input
+                  type="number"
+                  class="calculate-input input"
+                  id="age"
+                  placeholder="Age"
+                />
+                <label class="visually-hidden" for="gender">Gender</label>
+                <select
+                  class="calculate-input calculate-input-select input"
+                  id="gender"
+                  required
+                >
+                  <option value="" selected disabled>Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+                <label class="visually-hidden" for="activity">Activity</label>
+                <select
+                  class="calculate-input calculate-input-select input wide"
+                  id="activity"
+                  required
+                >
+                  <option value="" selected disabled>Select an activity factor:</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
               <button class="calculate-button button transparent" type="submit">
                 Calculate
               </button>
