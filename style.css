@@ -195,6 +195,18 @@ a:hover {
   color: var(--color-light-gray);
 }
 
+svg *[fill] {
+  fill: currentColor;
+}
+
+svg *[stroke] {
+  stroke: currentColor;
+}
+
+svg * {
+  transition-property: fill, stroke;
+}
+
 .container {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   margin-inline: auto;
@@ -713,7 +725,8 @@ input[type="number"] {
   left: 1.5em;
 }
 
-.family-desc {
+.family-desc,
+.footer-desc {
   font-size: clamp(15px, 1.04vw, 20px);
   font-weight: 300;
   line-height: 1.65;
@@ -848,6 +861,104 @@ input[type="number"] {
 
 .calculate-table-bold {
   font-weight: 700;
+}
+
+.footer {
+  --logoWidth: 20%;
+}
+
+.footer-main {
+  padding-top: 135px;
+  padding-bottom: 160px;
+}
+
+.footer-logo-wrapper,
+.footer-info-list {
+  display: grid;
+  column-gap: 60px;
+}
+
+.footer-logo-wrapper {
+  grid-template-columns: var(--logoWidth) auto;
+  margin-bottom: 70px;
+}
+
+.footer-info-list {
+  grid-template-columns: var(--logoWidth) repeat(3, 1fr);
+}
+
+.footer-desc {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.footer-info-title {
+  font-size: clamp(15px, 1.15vw, 22px);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.footer-info-schedule:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.footer-info-address {
+  margin-bottom: 35px;
+}
+
+.footer-info-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-info-title.with-arrow::after {
+  content: "";
+  display: inline-block;
+  width: 0.73em;
+  aspect-ratio: 1;
+  margin-left: 0.5em;
+  background: url("./images/banner-arrow.svg") center/contain no-repeat;
+  transform: rotate(90deg);
+}
+
+.footer-form-subscribe-input {
+  border: 1px solid var(--color-light-gray);
+  padding-right: 70px;
+}
+
+.footer-form-subscribe-input::placeholder {
+  color: var(--color-light-gray);
+}
+
+.footer-form-subscribe {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.footer-form-subscribe-button {
+  position: absolute;
+  width: 55px;
+  aspect-ratio: 1;
+  right: 0;
+  background: url(./images/arrow-top-right.svg) center / 70% no-repeat;
+  background-color: transparent;
+  border: var(--border);
+  border-radius: 50%;
+}
+
+.footer-form-subscribe-button:hover {
+  background-color: var(--color-light-gray);
+}
+
+.social-networks-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 19px;
+}
+
+.social-networks-item {
+  width: 30px;
 }
 
 @media (max-width: 1919px) {
