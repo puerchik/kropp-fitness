@@ -961,6 +961,16 @@ input[type="number"] {
   width: 30px;
 }
 
+.footer-extra {
+  background-color: var(--color-dark-alternate);
+  padding-block: 15px;
+}
+
+.footer-extra-copyright {
+  font-size: 14px;
+  font-weight: 300;
+}
+
 @media (max-width: 1919px) {
   .motivation-card-image {
     margin-block: -20px;
