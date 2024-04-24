@@ -709,11 +709,12 @@ input[type="number"] {
   color: var(--color-light);
 }
 
-.footer-main {
-  padding-top: 132px;
+.family {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 130px;
+  background-color: var(--color-dark-alternate);
 }
 
 .family-images-wrapper::-webkit-scrollbar {
@@ -877,6 +878,10 @@ input[type="number"] {
 }
 
 .footer-main {
+  padding-top: 132px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 135px;
   padding-bottom: 160px;
 }
