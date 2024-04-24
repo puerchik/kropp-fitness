@@ -709,12 +709,21 @@ input[type="number"] {
   color: var(--color-light);
 }
 
-.family {
+.footer-main {
   padding-top: 132px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--color-dark-alternate);
+}
+
+.family-images-wrapper::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+.family-images-wrapper::-webkit-scrollbar-thumb {
+  background-color: var(--color-light);
+  border-radius: 5px;
 }
 
 .family-title {
